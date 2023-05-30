@@ -1,0 +1,947 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-02-10 08:22:31",
+    "containerVersion": {
+        "path": "accounts/6002132908/containers/32635307/versions/0",
+        "accountId": "6002132908",
+        "containerId": "32635307",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6002132908/containers/32635307",
+            "accountId": "6002132908",
+            "containerId": "32635307",
+            "name": "www.ventapirlanta.com",
+            "publicId": "GTM-PS25CJS",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1601111287826",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6002132908/containers/32635307/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true
+            },
+            "tagIds": [
+                "GTM-PS25CJS"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "81",
+                "name": "FB - Purchase",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Meta Pixel Code added with GTM-->\n<script>\nfbq('track', 'Purchase',{\n  'content_type': 'product',\n  'contents': {{dl - fb contents}},\n  'currency': {{dl - currency}},\n  'value': {{dl - value}},\n},\n{\n  \"eventID\": {{EventID}},\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290636",
+                "firingTriggerId": [
+                    "78"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "84",
+                "name": "FB - All Pages",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Meta Pixel Code -->\n<script>\n  !function(f,b,e,v,n,t,s)\n  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n  n.callMethod.apply(n,arguments):n.queue.push(arguments)};\n  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\n  n.queue=[];t=b.createElement(e);t.async=!0;\n  t.src=v;s=b.getElementsByTagName(e)[0];\n  s.parentNode.insertBefore(t,s)}(window, document,'script',\n  'https://connect.facebook.net/en_US/fbevents.js');\n  fbq('init', '2357878417830678');\n  fbq('track', 'PageView');\n</script>\n<!-- End Meta Pixel Code -->"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290636",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "88",
+                "name": "FB - Initiate Checkout",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Meta Pixel Code added with GTM-->\n<script>\nfbq('track', 'InitiateCheckout',{\n  'content_type': 'product',\n  'num_items': {{dl - items}}.length,\n  'contents': {{dl - fb contents}},\n  'currency': {{dl - currency}},\n  'value': {{dl - value}},\n},\n{\n  \"eventID\": {{EventID}},\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290637",
+                "firingTriggerId": [
+                    "87"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "94",
+                "name": "FB - View Cart",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Meta Pixel Code added with GTM-->\n<script>\nfbq('trackCustom', 'view_cart',{\n  'content_type': 'product',\n  'currency': {{dl - currency}},\n  'value': {{dl - value}},\n},\n{\n  \"eventID\": {{EventID}},\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290637",
+                "firingTriggerId": [
+                    "93"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "96",
+                "name": "cHTML - Add Payment Info",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  \nvar sessionItems = JSON.parse(sessionStorage.getItem('items'))\nvar sessionFbContents = JSON.parse(sessionStorage.getItem('fb_contents'))\n\nvar value = IdeaCart.totalPrice\n\ndataLayer.push({\n    'event': 'add_payment_info',\n\n    'ecommerce': {\n        'currency': 'TRY',\n        'value': value,\n        'items': sessionItems\n    },\n    'fb_contents': sessionFbContents\n})\n  \n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290637",
+                "firingTriggerId": [
+                    "95"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "104",
+                "name": "FB - View Content",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Meta Pixel Code -->\n<script>\nfbq('track', 'ViewContent',{\n  'content_ids': [\"{{dl - item_id}}\"],\n  'content_name': '{{dl - item_name}}',\n  'content_category': {{dl - item_category}},\n  'content_type': 'product',\n  'contents': [{'id': '{{dl - item_id}}', 'quantity': {{dl - quantity}}}],\n  'currency': {{dl - currency}},\n  'value': {{dl - value}},\n},\n{\n  \"eventID\": {{EventID}},\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290638",
+                "firingTriggerId": [
+                    "103"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "105",
+                "name": "GA4 - All Pages",
+                "type": "gaawc",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendPageView",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableSendToServerContainer",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementId",
+                        "value": "G-TZ4Q0FVNB0"
+                    }
+                ],
+                "fingerprint": "1674047247017",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "106",
+                "name": "cHTML - Begin Checkout",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  \nvar sessionItems = JSON.parse(sessionStorage.getItem('items'))\nvar sessionFbContents = JSON.parse(sessionStorage.getItem('fb_contents'))\n\nvar value = IdeaCart.totalPrice.toFixed(2)\n\ndataLayer.push({\n    'event': 'begin_checkout',\n\n    'ecommerce': {\n        'currency': 'TRY',\n        'value': value,\n        'items': sessionItems\n    },\n    'fb_contents': sessionFbContents\n})\n   \n\n  \n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290639",
+                "firingTriggerId": [
+                    "99"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "110",
+                "name": "GA4 - Enhanced Ecommerce",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "getEcommerceDataFrom",
+                        "value": "dataLayer"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "{{Event}}"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 - All Pages"
+                    }
+                ],
+                "fingerprint": "1673255290635",
+                "firingTriggerId": [
+                    "90"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "111",
+                "name": "FB - Add Payment Info",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Meta Pixel Code added with GTM-->\n<script>\nfbq('track', 'AddPaymentInfo',{\n  'content_type': 'product',\n  'contents': {{dl - fb contents}},\n  'currency': {{dl - currency}},\n  'value': {{dl - value}},\n},\n{\n  \"eventID\": {{EventID}},\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290639",
+                "firingTriggerId": [
+                    "82"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "112",
+                "name": "cHTML - Add To Cart Event",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  \nfunction addToCartEvent(element, response) {\n    if (response.success) {\n\n        var qty = \"\"\n\n        if (document.querySelector(\"#qty-input\") != null || document.querySelector(\"#qty-input\") != undefined) {\n            qty = Number(document.querySelector(\"#qty-input\").value)\n        } else {\n            qty = 1\n        }\n\n        var value = Number((response.item.price).toFixed(2)) / response.item.quantity\n        // var category = document.querySelector('[itemprop=\"category\"]').getAttribute('content')\n\n        dataLayer.push({\n            'event': 'add_to_cart',\n            \n            'ecommerce': {\n            'currency': 'TRY',\n            'value': value * qty,\n            'items': [{\n                'item_name': response.item.product.fullName,\n                'item_id': response.item.product.id,\n                'price': value,\n                'currency': 'TRY',\n                'quantity': qty,\n                'item_category': '',\n                'item_brand': response.item.product.brandName,\n            }]\n            }\n        })\n        console.log(response)\n    }\n}\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290639",
+                "firingTriggerId": [
+                    "103"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "tagId": "113",
+                "name": "FB - Add To Cart",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Meta Pixel Code -->\n<script>\nfbq('track', 'AddToCart',{\n  'content_ids': [\"{{dl - item_id}}\"],\n  'content_name': '{{dl - item_name}}',\n  'content_type': 'product',\n  'content_category': {{dl - item_category}},\n  'contents': [{'id': '{{dl - item_id}}', 'quantity': {{dl - quantity}}}],\n  'currency': {{dl - currency}},\n  'value': {{dl - value}},\n},\n{\n  \"eventID\": {{EventID}},\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290640",
+                "firingTriggerId": [
+                    "109"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "triggerId": "78",
+                "name": "Event - Purchase",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1673255290625"
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "triggerId": "82",
+                "name": "Event - Add Payment Info",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "add_payment_info"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1673255290627"
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "triggerId": "87",
+                "name": "Event - Begin Checkout",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "begin_checkout"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{dl - value}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "0"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1673255290628"
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "triggerId": "90",
+                "name": "Event - Enhanced Ecommerce",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "view_item|add_to_cart|view_cart|begin_checkout|purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1673255290629"
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "triggerId": "93",
+                "name": "Event - View Cart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "view_cart"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{dl - value}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "0"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1673255290630"
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "triggerId": "95",
+                "name": "Page - Payment Info Step 3",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/order/step3"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1673255290630"
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "triggerId": "99",
+                "name": "Page - Checkout Step 2",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/order/step2"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1673255290631"
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "triggerId": "103",
+                "name": "Event - View Item",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "view_item"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1673255290633"
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "triggerId": "109",
+                "name": "Event - Add To Cart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "add_to_cart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1673255290635"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "variableId": "75",
+                "name": "dl - currency",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.currency"
+                    }
+                ],
+                "fingerprint": "1673255290623",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "variableId": "76",
+                "name": "dl - fb contents",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "fb_contents"
+                    }
+                ],
+                "fingerprint": "1673255290624",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "variableId": "77",
+                "name": "dl - value",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.value"
+                    }
+                ],
+                "fingerprint": "1673255290625",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "variableId": "80",
+                "name": "EventID",
+                "type": "cvt_32635307_79",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useCustomEventCounter",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1673255290626",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "variableId": "85",
+                "name": "dl - item_name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.items.0.item_name"
+                    }
+                ],
+                "fingerprint": "1673255290627",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "variableId": "86",
+                "name": "dl - items",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.items"
+                    }
+                ],
+                "fingerprint": "1673255290627",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "variableId": "100",
+                "name": "dl - item_id",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.items.0.item_id"
+                    }
+                ],
+                "fingerprint": "1673255290632",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "variableId": "101",
+                "name": "dl - item_category",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.detail.products.0.category"
+                    }
+                ],
+                "fingerprint": "1673255290632",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "variableId": "102",
+                "name": "dl - quantity",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.items.0.quantity"
+                    }
+                ],
+                "fingerprint": "1673255290633",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1676017351549",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6002132908/containers/32635307/versions/0?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "6002132908",
+                "containerId": "32635307",
+                "templateId": "79",
+                "name": "Event Id",
+                "fingerprint": "1673255290625",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Event Id\",\n  \"description\": \"generates a unique event id for all gtm / dataLayer events - based on a random id for every page.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ],\n  \"brand\": {\n    \"displayName\": \"mbaersch\",\n    \"id\": \"github.com_mbaersch\"\n  }\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"useCustomEventCounter\",\n    \"checkboxText\": \"Custom Event Counter\",\n    \"simpleValueType\": true,\n    \"help\": \"The result will use gtm.uniqueEventId from the dataLayer to differentiate separate events on the same page. If that does not fit your triggering plan, you can use different event id variables for every event type and add your own counter. \\n\\nExample: separate event id for a purchase using the transaction id as unique counter.\"\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"customEventCounter\",\n    \"displayName\": \"\",\n    \"simpleValueType\": true,\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\"\n      }\n    ],\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"useCustomEventCounter\",\n        \"paramValue\": true,\n        \"type\": \"EQUALS\"\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst copyFromDataLayer = require('copyFromDataLayer');\nconst setInWindow = require('setInWindow');\nconst copyFromWindow = require('copyFromWindow');\nconst getTimestampMillis = require('getTimestampMillis');\nconst generateRandom = require('generateRandom');\nvar eventId = copyFromWindow('_randomPageId');\nif (!eventId) {\n  eventId = getTimestampMillis() + '.' + generateRandom(100000, 999999);\n  setInWindow('_randomPageId', eventId, false);\n}\n\nvar uniqueEventCounter = (data.useCustomEventCounter === true) ? data.customEventCounter : copyFromDataLayer('gtm.uniqueEventId') || '0';\n\nreturn eventId + \".\" + uniqueEventCounter;\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"_randomPageId\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_data_layer\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keyPatterns\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"gtm.uniqueEventId\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated on 22.4.2022, 10:03:29\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "mbaersch",
+                    "repository": "event-id",
+                    "version": "1b513f75db715689cc7da724c495c311d29b3354",
+                    "signature": "e6728721e7ae069acbbd6924487fab591ffa3a39727fcc76ec7840329e46928e"
+                }
+            }
+        ]
+    }
+}
