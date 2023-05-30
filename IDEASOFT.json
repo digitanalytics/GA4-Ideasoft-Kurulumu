@@ -1,0 +1,392 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-05-25 08:25:46",
+    "containerVersion": {
+        "path": "accounts/6004334476/containers/48103793/versions/0",
+        "accountId": "6004334476",
+        "containerId": "48103793",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6004334476/containers/48103793",
+            "accountId": "6004334476",
+            "containerId": "48103793",
+            "name": "www.brandeyes.com.tr",
+            "publicId": "GTM-TJFT543",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1625725565489",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6004334476/containers/48103793/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true
+            },
+            "tagIds": [
+                "GTM-TJFT543"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "tagId": "94",
+                "name": "cHTML - Add Payment Info",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  \nvar sessionItems = JSON.parse(sessionStorage.getItem('items'))\nvar sessionFbContents = JSON.parse(sessionStorage.getItem('fb_contents'))\n\nvar value = IdeaCart.totalPrice\n\ndataLayer.push({\n    'event': 'add_payment_info',\n\n    'ecommerce': {\n        'currency': 'TRY',\n        'value': Number((value).toFixed(2)),\n        'items': sessionItems\n    },\n    'fb_contents': sessionFbContents\n})\n  \n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1680713766028",
+                "firingTriggerId": [
+                    "93"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "tagId": "96",
+                "name": "cHTML - Add Shipping Info",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  \nvar sessionItems = JSON.parse(sessionStorage.getItem('items'))\nvar sessionFbContents = JSON.parse(sessionStorage.getItem('fb_contents'))\n\nvar value = IdeaCart.totalPrice\n\ndataLayer.push({\n    'event': 'add_shipping_info',\n\n    'ecommerce': {\n        'currency': 'TRY',\n        'value': Number((value).toFixed(2)),\n        'items': sessionItems\n    },\n    'fb_contents': sessionFbContents\n})\n  \n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1680713766027",
+                "firingTriggerId": [
+                    "95"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "tagId": "97",
+                "name": "cHTML - Add to Cart",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  \nfunction addToCartEvent(element, response) {\n    if (response.success) {\n\n        var qty = \"\"\n\n        if (document.querySelector(\"#qty-input\") != null || document.querySelector(\"#qty-input\") != undefined) {\n            qty = Number(document.querySelector(\"#qty-input\").value)\n        } else {\n            qty = 1\n        }\n\n        var value = Number((response.item.price).toFixed(2)) / response.item.quantity\n        // var category = document.querySelector('[itemprop=\"category\"]').getAttribute('content')\n\n        dataLayer.push({\n            'event': 'add_to_cart',\n            \n            'ecommerce': {\n            'currency': 'TRY',\n            'value': Number(value * qty),\n            'items': [{\n                'item_name': String(response.item.product.fullName),\n                'item_id': String(response.item.product.id),\n                'price': Number(value),\n                'currency': 'TRY',\n                'quantity': Number(qty),\n                'item_category': String(document.querySelector(\"#breadcrumbs > ol > li:nth-child(3) > a > span > span\").textContent),\n                'id': String(response.item.product.id),\n                'google_business_vertical': 'retail' \n            }]\n            }\n        })\n        console.log(response)\n    }\n}\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1680713766029",
+                "firingTriggerId": [
+                    "54"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "tagId": "98",
+                "name": "cHTML - Begin Checkout",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  \nvar sessionItems = JSON.parse(sessionStorage.getItem('items'))\nvar sessionFbContents = JSON.parse(sessionStorage.getItem('fb_contents'))\n\nvar value = IdeaCart.totalPrice.toFixed(2)\n\ndataLayer.push({\n    'event': 'begin_checkout',\n\n    'ecommerce': {\n        'currency': 'TRY',\n        'value': Number(value),\n        'items': sessionItems\n    },\n    'fb_contents': sessionFbContents\n})\n   \n\n  \n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1680713766029",
+                "firingTriggerId": [
+                    "44"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "tagId": "99",
+                "name": "cHTML - View Item List",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  var items = document.querySelectorAll(\"#product-list-container > div.showcase-container > div > div\");\n  var productList = [];\n\n  for (var i = 0; i < items.length && i < 10; i++) {\n    var itemName = items[i].querySelector(\"div.showcase-content > div.showcase-title > a\").innerText;\n    var itemPrice = items[i].querySelector(\"div.showcase-content > div.showcase-price > div\").innerText;\n    itemPrice = itemPrice.replace(\"TL\", \"\").replace(\".\", \"\").replace(\",\", \".\");\n\n    var aElement = items[i].querySelector('a[data-selector=\"add-my-favorites\"]');\n    var productId = aElement.getAttribute('data-product-id');\n\n    var itemCategory = items[i].querySelector(\"div.showcase-content > div.showcase-brand > a\").innerText;\n\n    productList.push({item_name: itemName,id: productId, google_business_vertical:\"retail\", currency: \"TRY\", price: parseFloat(itemPrice), quantity: 1, item_id: productId, item_category: itemCategory});\n  }\n\n  if (productList.length > 0) {\n    window.dataLayer = window.dataLayer || [];\n    window.dataLayer.push({\n      event: 'view_item_list',\n      ecommerce:{\n      items: productList\n      }});\n  }\n</script>\n"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1680714460270",
+                "firingTriggerId": [
+                    "101"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "triggerId": "44",
+                "name": "Page - Checkout",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/order/step2"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1645191652162"
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "triggerId": "54",
+                "name": "Event - view_item",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "view_item"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1645191652163"
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "triggerId": "93",
+                "name": "Page - Payment Info Step 3",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div.col.col-lg-12.order-3 *"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Text}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "SİPARİŞİ TAMAMLA"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/order/step3"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1680968506637"
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "triggerId": "95",
+                "name": "Click - Ödeme İşlemleri",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Classes}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "btn btn-block btn-primary"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Text}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "ÖDEME İŞLEMLERİ"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1680687601606"
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "triggerId": "101",
+                "name": "Trigger - kategori",
+                "type": "WINDOW_LOADED",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/kategori/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1680714523085"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "type": "CLICK_ELEMENT",
+                "name": "Click Element"
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "6004334476",
+                "containerId": "48103793",
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            }
+        ],
+        "fingerprint": "1685003146947",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6004334476/containers/48103793/versions/0?apiLink=version"
+    }
+}
